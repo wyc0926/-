@@ -1,0 +1,44 @@
+
+                                          DLL 操作报告        
+                                                  produced by RemoteDLL
+
+               (For latest version visit http://SecurityXploded.com/remotedll.php)
+
+
+ Username: Administrator
+
+
+ Detailed DLL Operation Report
+ ***********************************************************************************
+
+ 
+ 启动注入DLL操作...                    
+     进程    = Ipmana.exe
+     注入DLL    = C:\Users\Administrator\Desktop\DNF封包工具\ip安装包（第二步）\wpes.dll
+     注入方法         = CreateRemoteThread
+ 
+ 
+ 步骤 1 => 打开远程进程 [4220 - Ipmana.exe] 进行DLL注入                
+     成功   
+ 
+ 
+ 步骤 2 => 将DLL [C:\Users\Administrator\Desktop\DNF封包工具\ip安装包（第二步）\wpes.dll] 的路径名复制到远程进程的内存空间       
+     成功   
+ 
+ 
+ 步骤 3 => [Defeat ASLR] Calculating the LoadLibrary function address on target process
+     Successfully got the address of Kernel32.dll on target process
+     Address of Kernel32.dll [Target Process] = 0x77840000
+     Address of LoadLibrary [Target Process] = 0x7788dd15
+ 
+ 
+ 步骤 4 => Injecting the DLL into target process using the method 'CreateRemoteThread'
+     等待远程线程终止                      ...
+     Address of Injected DLL [C:\Users\Administrator\Desktop\DNF封包工具\ip安装包（第二步）\wpes.dll] in target process = 0x10000000
+ 
+ 
+ 成功的将DLL注入到目标进程中!!!                       
+ 
+ ***********************************************************************************
+ 
+ 
